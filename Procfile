@@ -1,1 +1,1 @@
-web gunicorn portfolio_drf_backend.wsgi:application --log-file -
+web: gunicorn portfolio_drf_backend.wsgi:application --log-file -
