@@ -4,12 +4,12 @@ from .models import Portfolio, Education
 class PortfolioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Portfolio
-        fields = '__all__'
+        fields = ('title', 'category', 'description', 'image', 'git_hub_link', 'project_link')
 
 class EducationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Education
-        fields = '__all__'
+        fields = ('category', 'year', 'title', 'description',)
 
     
 
